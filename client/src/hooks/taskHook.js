@@ -9,12 +9,12 @@ const useTasks = (userId) => {
   const [completedTasks, setCompletedTasks] = useState([]);
   const [editTaskId, setEditTaskId] = useState(null); // <-- to track if editing
 
-  const API_BASE = 'http://localhost:5000/api/tasks';
+  const API_BASE = 'https://updated-task-manager.onrender.com/api/tasks';
 
   useEffect(() => {
     const fetchUserAndTasks = async () => {
       try {
-        const userRes = await fetch(`http://localhost:5000/api/users/${userId}`);
+        const userRes = await fetch(`https://updated-task-manager.onrender.com/api/users/${userId}`);
         const userData = await userRes.json();
         setName(userData.fullName);
         setUsername(userData.username);
