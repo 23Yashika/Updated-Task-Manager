@@ -28,22 +28,24 @@ A full-stack Task Manager web application where users can register, log in using
 
 ---
 
-## 📂 Project Structure
+## 📁 Project Structure
 
+```
 task-manager/
-├── client/ # React frontend
-│ ├── pages/ # Pages like Login, Register, and TaskDashboard
-│ ├── components/ # Reusable UI components (e.g., Task Card)
-│ ├── hooks/ # Custom React hooks (useLogin, useRegister, useTasks)
-│ └── App.jsx # Main React App component
+├── client/                  # React frontend
+│   ├── pages/               # Pages like Login, Register, and TaskDashboard
+│   ├── components/          # Reusable UI components (e.g., Task Card)
+│   ├── hooks/               # Custom React hooks (loginHook, registerHook, taskHook)
+│   └── App.jsx              # Main React App component
 │
-├── server/ # Node.js + Express backend
-│ ├── controllers/ # Request handlers for user and task operations
-│ ├── models/ # Mongoose schemas (User, Task)
-│ ├── routes/ # Route definitions for API endpoints
-│ ├── app.js # Express app configuration
-│ └── server.js # Entry point to start the server
+├── server/                  # Node.js + Express backend
+│   ├── controllers/         # Request handlers for user and task operations
+│   ├── models/              # Mongoose schemas (User, Task)
+│   ├── routes/              # Route definitions for API endpoints
+│   ├── app.js               # Express app configuration
+│   └── server.js            # Entry point to start the server
 │
-├── .env # Environment variables (e.g., MONGO_URI, PORT)
-├── README.md # Project documentation
-└── package.json # Project dependencies and scripts
+├── .env                     # Environment variables (e.g., MONGO_URI, PORT)
+├── README.md                # Project documentation
+└── package.json             # Project dependencies and scripts
+```
